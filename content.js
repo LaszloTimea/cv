@@ -58,7 +58,7 @@ contact: {
   <li>+36 20 384 6611</li>
   <li>Budapest, XI. kerület</li>
   <li>Jogosítvány: B kategória</li>
-  <li><a href="#">linkedin.com/in/tímea-lászló-19a780258</a></li>
+  <li><a href="https://www.linkedin.com/in/t%C3%ADmea-l%C3%A1szl%C3%B3-19a780258/">LinkedIn profil</a></li>
 </ul>`,
   en: `<h3>Details</h3>
 <ul>
@@ -66,7 +66,7 @@ contact: {
   <li>+36 20 384 6611</li>
   <li>Budapest, XI. district</li>
   <li>Driving license: European B</li>
-  <li><a href="#">linkedin.com/in/tímea-lászló-19a780258</a></li>
+  <li><a href="https://www.linkedin.com/in/t%C3%ADmea-l%C3%A1szl%C3%B3-19a780258/">LinkedIn profile</a></li>
 </ul>`
 },
 
