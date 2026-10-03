@@ -179,20 +179,27 @@ tools: {
 
 /* ---------- Tab 2: Motivation letter (whole letter = one block) ---------- */
 letter: {
-  hu: `<p class="meta">Göteborg, 2026. március 15.<br>Example Environmental AB, HR csapat</p>
-<p>Tisztelt Toborzó Csapat!</p>
-<p>A tiszta víz az első dolog, amit az emberek természetesnek vesznek, és az utolsó, amely nélkül élni tudnának. Ez a gondolat formálta a pályámat, és ezért keltette fel a figyelmemet az Önök ellenálló vízinfrastruktúrával kapcsolatos munkája.</p>
-<p>Nyolc év alatt tisztítórendszereket terveztem, vízgyűjtőket modelleztem és környezeti hatást vizsgáltam állami és magánügyfelek számára. A BlueLoop Consultingnál egy kis csapatot vezetek, amely gyorsan szállít pilotokat, tanul az adatokból és alkalmazkodik. A műszaki mélység és a gyors iteráció ezen ötvözetét hoznám az Önök projektjeibe.</p>
-<p>Azok a feladatok motiválnak, amelyeknek látható eredménye van: egy tisztább folyó, egy kevesebb energiát használó üzem, egy közösség, amely bízik a vizében. Örömmel beszélnék arról, hogyan támogathatná tapasztalatom az Önök következő növekedési szakaszát.</p>
+  hu: `
+<p>Tisztelt Hölgyem/Uram!</p>
+<p>Engedje meg, hogy röviden bemutatkozzam. Idén februárban kiváló eredménnyel fejeztem be környezetmérnöki (MSc) tanulmányaimat az Óbudai Egyetemen, EHS specializációval. Azt megelőzően az ELTE Természettudományi Karán szereztem geológus (MSc) diplomát.</p>
+<p>Tanulmányaim során e két szakterületek összekapcsolása egyre inkább meghatározó lett számomra, ezért a környezetszennyezések vizsgálata, a szennyezett területek állapotának feltárása, valamint a felszín alatti vizek védelme felé orientálódtam.</p>
+<p>Diplomamunkámat az ELGOSCAR Környezettechnológiai Zrt. közreműködésével, a pétfürdői egykori Nitrogénművek történelmileg szennyezett területén készítettem. A kutatás során a terület környezetföldtani és vízföldtani viszonyait vizsgáltam, különös tekintettel a potenciális szennyezőanyag-terjedési útvonalakra és a hidraulikai kapcsolatokra. A munkához terepi vizsgálatok is kapcsolódtak, többek között kúttesztek és távolhatás-vizsgálatok, melyeket különböző szoftverek segítségével értékeltem ki. Ezáltal rendelkezem az AutoCAD, QGIS és Surfer használatában gyakorlati tapasztalattal is. Mindezek mellett ismeretet szereztem a környezeti kockázatértékelés alapjairól, a kármentesítési folyamatokról, valamint a vonatkozó környezetvédelmi jogszabályokról egyaránt.</p>
+<p>Jelenleg a Geo-Terra Kft.-nél dolgozom geotechnikai előkészítő mérnökként. Munkám során műszaki dokumentációk összeállításában és terepi és laboratóriumi adatok feldolgozásában veszek részt. Emellett segítem a tervezőmérnökök munkáját különböző fúrásszelvények és műszaki rajzok szerkesztésével. Korábbi laboratóriumi munkám révén a talajvizsgálatok gyakorlati oldalát is megismertem. </p>
+<p>Jövőbeli célom, hogy meglévő geológiai és környezetmérnöki ismereteimet a gyakorlatban is hasznosítsam, és tovább mélyítsem tudásomat a környezetvédelmi jogszabályok alkalmazása, valamint az engedélyezési eljárások és a környezetvédelmi tanácsadás területén. Szeretnék további tapasztalatot szerezni a különböző környezetvédelmi projektekben és hozzájárulni egy szakmailag elkötelezett csapat tagjaként a folyamatos fejlődéshez.</p>
+<p>Köszönöm, hogy időt szánt levelem áttekintésére. Amennyiben szakmai hátterem felkeltette érdeklődésüket, és jelenleg vagy a közeljövőben lehetőség nyílik környezetmérnöki ismeretekkel rendelkező szakember csatlakozására, örömmel venném a lehetőséget egy személyes bemutatkozásra és szakmai egyeztetésre.</p>
 <p>Üdvözlettel,</p>
-<p class="sig">Maya Lindqvist</p>`,
-  en: `<p class="meta">Gothenburg, 15 March 2026<br>Hiring Team, Example Environmental AB</p>
-<p>Dear hiring team,</p>
-<p>Clean water is the first thing most people stop noticing and the last thing they can live without. That idea has shaped my career, and it is why your work on resilient water infrastructure caught my attention.</p>
-<p>Over eight years I have designed treatment systems, modelled catchments and assessed environmental impact for public and private clients. At BlueLoop Consulting I lead a small team that delivers pilots quickly, learns from the data, and adjusts. That mix of technical depth and fast iteration is what I would bring to your projects.</p>
-<p>I am motivated by work that has a visible result: a river that runs cleaner, a plant that uses less energy, a community that trusts its water. I would welcome the chance to discuss how my experience could support your next phase of growth.</p>
-<p>Kind regards,</p>
-<p class="sig">Maya Lindqvist</p>`
+<p class="sig">László Tímea</p>`,
+  en: `
+<p>Dear Sir or Madam,</p>
+<p>Please allow me to briefly introduce myself. In February this year, I completed my MSc in Environmental Engineering at Óbuda University, specializing in Environmental, Health and Safety (EHS), with excellent results. Prior to this, I obtained an MSc degree in Geology from the Faculty of Science at Eötvös Loránd University (ELTE).</p>
+<p>During my studies, I became increasingly interested in combining these two fields, which led me to focus on the investigation of environmental contamination, the assessment of contaminated sites, and the protection of groundwater resources.</p>
+<p>I completed my MSc thesis in cooperation with ELGOSCAR Környezettechnológiai Zrt., focusing on a historically contaminated site at the former Nitrogen Works in Pétfürdő, Hungary. As part of my research, I investigated the environmental geological and hydrogeological conditions of the site, with particular emphasis on potential contaminant migration pathways and hydraulic connections. The project also involved field investigations, including well testing and interference tests, which I evaluated using various software tools. Through this work, I gained practical experience in using AutoCAD, QGIS and Surfer. In addition, my studies provided me with knowledge of the fundamentals of environmental risk assessment, remediation processes, and relevant environmental legislation.</p>
+<p>I am currently working as a Geotechnical Preparation Engineer at Geo-Terra Kft. My responsibilities include preparing technical documentation and processing field and laboratory data. I also support design engineers by preparing borehole logs and technical drawings. Through my previous laboratory experience, I have also gained practical insight into soil testing and laboratory-based soil investigations.</p>
+<p>My professional goal is to apply my existing geological and environmental engineering knowledge in practice while further developing my expertise in the application of environmental legislation, permitting procedures and environmental consulting. I would like to gain further experience in a wide range of environmental projects and contribute to the work and continuous development of a professionally committed team.</p>
+<p>Thank you for taking the time to review my application and professional background. If my qualifications and experience have sparked your interest, and there is currently or in the near future an opportunity for a professional with an environmental engineering background to join your team, I would be pleased to have the opportunity to introduce myself in person and discuss potential opportunities for professional cooperation.</p>
+<p>Yours sincerely,</p>
+
+<p class="sig">Tímea László</p>`
 },
 
 /* ---------- Tab 3: Additional info (one block per card) ---------- */
