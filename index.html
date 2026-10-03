@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>László Tímea · Environmental Engineer</title>
+<meta name="description" content="CV, motivation letter and extra information of László Tímea, environmental engineer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --mist:#EDF2EF; --paper:#FBFCFA; --ink:#12302F; --moss:#2E6B57; --sun:#F0A23B; --tide:#3C8DAD; --line:#CFDAD5; --muted:#586C68;
+  --sans:'Bricolage Grotesque',system-ui,sans-serif; --serif:'Newsreader',Georgia,serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{--mist:#0E1F1E; --paper:#142928; --ink:#E6F0EC; --moss:#6FC2A5; --sun:#F4B25A; --tide:#7CC0DB; --line:#2A4442; --muted:#9DB5AF}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--mist);color:var(--ink);font:400 16px/1.6 var(--sans)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;background:var(--ink);color:#EDF2EF;padding:56px 0 0}
+@media (prefers-color-scheme:dark){.hero{background:#0A1716}}
+.topo{position:absolute;inset:0;width:100%;height:100%;opacity:.5;pointer-events:none}
+.topo circle{fill:none;stroke:#6FC2A5;stroke-width:1}
+.hero .wrap{position:relative}
+.hero h1{font-weight:800;font-size:clamp(2.6rem,8vw,5.6rem);line-height:.95;letter-spacing:-.035em;margin:0 0 14px}
+.hero p.role{font-size:clamp(1.05rem,2.4vw,1.4rem);margin:0 0 6px;color:#BFD7CE;max-width:34ch}
+.hero .pill{display:inline-block;background:var(--sun);color:#12302F;font-weight:600;padding:3px 12px;border-radius:99px;font-size:.88rem;margin-top:10px}
+
+/* Language switch */
+.lang{position:absolute;top:-30px;right:20px;display:flex;border:1.5px solid rgba(255,255,255,.3);border-radius:99px;overflow:hidden}
+.lang button{appearance:none;border:0;background:transparent;color:#BFD7CE;font:600 .85rem var(--sans);padding:6px 14px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--sun);color:#12302F}
+
+/* Tabs */
+.tabs{position:relative;display:flex;gap:4px;margin-top:44px}
+.tab{appearance:none;border:0;background:transparent;color:#BFD7CE;font:600 1rem var(--sans);padding:14px 22px;cursor:pointer;border-radius:12px 12px 0 0;transition:background .2s,color .2s}
+.tab:hover{color:#fff;background:rgba(255,255,255,.08)}
+.tab[aria-selected="true"]{background:var(--mist);color:var(--ink)}
+@media (prefers-color-scheme:dark){.tab[aria-selected="true"]{color:var(--ink)}}
+
+/* Panels */
+main{padding:40px 0 70px}
+.panel[hidden]{display:none}
+.panel{animation:swap .35s ease}
+@keyframes swap{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+h2{font-size:1.5rem;letter-spacing:-.02em;margin:0 0 18px}
+h3{font-size:1.05rem;margin:0}
+.muted{color:var(--muted)}
+.cv{display:grid;grid-template-columns:290px 1fr;gap:36px;align-items:start}
+.side{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:24px;position:sticky;top:16px}
+.photo{position:relative;width:100%;aspect-ratio:1;border-radius:46% 54% 42% 58%/52% 44% 56% 48%;overflow:hidden;background:var(--line);margin-bottom:12px;border:3px solid var(--sun)}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.photo .empty{position:absolute;inset:0;display:grid;place-items:center;text-align:center;color:var(--muted);font-size:.9rem;padding:20px}
+.photo-actions{display:flex;gap:8px;margin-bottom:20px}
+.btn{font:600 .85rem var(--sans);border:1.5px solid var(--moss);background:transparent;color:var(--moss);padding:7px 14px;border-radius:99px;cursor:pointer}
+.btn:hover{background:var(--moss);color:var(--paper)}
+.btn.ghost{border-color:var(--line);color:var(--muted)}
+.side h3{margin:20px 0 8px;font-size:.95rem;color:var(--moss)}
+.side ul{list-style:none;margin:0;padding:0;font-size:.93rem}
+.side li{padding:3px 0}
+.bar{height:6px;border-radius:9px;background:var(--line);margin:3px 0 10px;overflow:hidden}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--moss),var(--tide));border-radius:9px}
+.skill{display:flex;justify-content:space-between;font-size:.9rem}
+
+.block{margin-bottom:38px}
+.lead{font-family:var(--serif);font-size:1.25rem;line-height:1.55;max-width:60ch}
+.timeline{border-left:2px solid var(--moss);margin-left:6px;padding-left:26px}
+.job{position:relative;margin-bottom:26px}
+.job::before{content:"";position:absolute;left:-35px;top:7px;width:14px;height:14px;border-radius:50%;background:var(--sun);border:3px solid var(--mist)}
+.job .when{font-size:.85rem;color:var(--tide);font-weight:600}
+.job ul{margin:8px 0 0;padding-left:18px}
+.job li{margin:3px 0}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tags span{border:1.5px solid var(--line);background:var(--paper);padding:3px 12px;border-radius:99px;font-size:.88rem}
+.edu{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.edu div{background:var(--paper);border-left:5px solid var(--tide);padding:14px 18px;border-radius:4px 14px 14px 4px}
+
+/* Letter */
+.letter{max-width:720px;margin:0 auto;background:var(--paper);border:1px solid var(--line);border-radius:6px 28px 6px 28px;padding:clamp(26px,6vw,64px);font-family:var(--serif);font-size:1.15rem;line-height:1.7}
+.letter p{margin:0 0 1.1em}
+.letter .meta{font-family:var(--sans);font-size:.9rem;color:var(--muted)}
+.letter .sig{font-family:var(--serif);font-style:italic;font-size:1.5rem;margin-top:1.4em}
+
+/* Info */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:22px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:24px}
+.card.wide{grid-column:1/-1;background:var(--moss);color:#fff;border:0}
+.card.wide .muted{color:#D5EBE2}
+.card h2{font-size:1.2rem}
+.card ul{margin:0;padding-left:18px}
+.card li{margin:6px 0}
+.stats{display:flex;gap:30px;flex-wrap:wrap}
+.stats b{display:block;font-size:2.4rem;font-weight:800;letter-spacing:-.03em;line-height:1}
+
+footer{border-top:1px solid var(--line);padding:22px 0;color:var(--muted);font-size:.88rem}
+
+@media (max-width:820px){
+  .cv{grid-template-columns:1fr}
+  .side{position:static}
+  .photo{max-width:240px;margin-inline:auto}
+  .tab{padding:12px 14px;font-size:.93rem}
+}
+@media print{.hero .tabs,.photo-actions,footer{display:none}.panel[hidden]{display:none}body{background:#fff}}
+@media (prefers-reduced-motion:reduce){.panel{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <svg class="topo" aria-hidden="true" viewBox="0 0 1200 420" preserveAspectRatio="xMidYMid slice">
+    <defs><filter id="warp"><feTurbulence type="fractalNoise" baseFrequency=".004 .009" numOctaves="2" seed="7"/><feDisplacementMap in="SourceGraphic" scale="150"/></filter></defs>
+    <g filter="url(#warp)" transform="translate(880 200)">
+      <circle r="40"/><circle r="85"/><circle r="130"/><circle r="175"/><circle r="220"/><circle r="265"/><circle r="310"/><circle r="355"/><circle r="400"/><circle r="445"/>
+    </g>
+  </svg>
+  <div class="wrap">
+    <div class="lang" role="group" aria-label="Nyelv / Language">
+      <button type="button" data-l="hu" aria-pressed="true">HU</button>
+      <button type="button" data-l="en" aria-pressed="false">EN</button>
+    </div>
+    <h1>László<br>Tímea</h1>
+    <p class="role">Environmental engineer turning water, soil and energy data into cleaner decisions.</p>
+    <span class="pill">Open to new projects from January</span>
+    <div class="tabs" role="tablist" aria-label="Sections">
+      <button class="tab" role="tab" id="t-cv" aria-controls="cv" aria-selected="true">CV</button>
+      <button class="tab" role="tab" id="t-letter" aria-controls="letter" aria-selected="false" tabindex="-1">Motivation letter</button>
+      <button class="tab" role="tab" id="t-info" aria-controls="info" aria-selected="false" tabindex="-1">Additional info</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- TAB 1: CV -->
+  <section class="panel cv" id="cv" role="tabpanel" aria-labelledby="t-cv">
+    <aside class="side">
+      <div class="photo" id="photo">
+        <img id="photoImg" alt="Portrait of László Tímea" hidden>
+        <div class="empty" id="photoEmpty"></div>
+      </div>
+      <div class="photo-actions">
+        <button class="btn" id="upBtn" type="button">Upload photo</button>
+        <button class="btn ghost" id="rmBtn" type="button" hidden>Remove</button>
+        <input type="file" id="file" accept="image/*" hidden>
+      </div>
+
+      <h3>Contact</h3>
+      <ul>
+        <li><a href="mailto:maya.lindqvist@example.com">maya.lindqvist@example.com</a></li>
+        <li>+46 70 123 45 67</li>
+        <li>Gothenburg, Sweden</li>
+        <li><a href="#">linkedin.com/in/mayalindqvist</a></li>
+      </ul>
+
+      <h3>Core skills</h3>
+      <div class="skill"><span>Life-cycle assessment</span><span>95%</span></div><div class="bar"><i style="width:95%"></i></div>
+      <div class="skill"><span>Hydrological modelling</span><span>90%</span></div><div class="bar"><i style="width:90%"></i></div>
+      <div class="skill"><span>GIS &amp; remote sensing</span><span>85%</span></div><div class="bar"><i style="width:85%"></i></div>
+      <div class="skill"><span>Python &amp; R</span><span>80%</span></div><div class="bar"><i style="width:80%"></i></div>
+
+      <h3>Languages</h3>
+      <ul><li>Swedish — native</li><li>English — fluent</li><li>German — conversational</li></ul>
+    </aside>
+
+    <div>
+      <div class="block">
+        <h2>Profile</h2>
+        <p class="lead">Environmental engineer with eight years of experience in water treatment, circular-economy design and impact assessment. I move quickly from field data to a working prototype, and I like projects where engineering, policy and communities meet.</p>
+      </div>
+
+      <div class="block">
+        <h2>Experience</h2>
+        <div class="timeline">
+          <div class="job">
+            <div class="when">2022 – present</div>
+            <h3>Senior Environmental Engineer, BlueLoop Consulting</h3>
+            <ul>
+              <li>Lead a team of five designing wastewater reuse systems for three municipalities.</li>
+              <li>Cut pilot plant energy use by 28% through process optimisation.</li>
+              <li>Introduced agile sprints to project delivery, shortening reporting cycles by a third.</li>
+            </ul>
+          </div>
+          <div class="job">
+            <div class="when">2018 – 2022</div>
+            <h3>Environmental Engineer, Nordic Water Institute</h3>
+            <ul>
+              <li>Built catchment models used in regional flood-risk planning.</li>
+              <li>Ran life-cycle assessments for 12 industrial clients.</li>
+            </ul>
+          </div>
+          <div class="job">
+            <div class="when">2016 – 2018</div>
+            <h3>Junior Consultant, GreenPath Studio</h3>
+            <ul>
+              <li>Prepared environmental impact assessments for infrastructure projects.</li>
+              <li>Supported field sampling and laboratory analysis.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="block">
+        <h2>Education</h2>
+        <div class="edu">
+          <div><h3>MSc Environmental Engineering</h3><span class="muted">Chalmers University, 2016</span></div>
+          <div><h3>BSc Civil &amp; Environmental Eng.</h3><span class="muted">Lund University, 2014</span></div>
+        </div>
+      </div>
+
+      <div class="block">
+        <h2>Tools</h2>
+        <div class="tags"><span>ArcGIS</span><span>QGIS</span><span>SWMM</span><span>SimaPro</span><span>MODFLOW</span><span>Python</span><span>R</span><span>AutoCAD</span><span>Power BI</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TAB 2: LETTER -->
+  <section class="panel" id="letter" role="tabpanel" aria-labelledby="t-letter" hidden>
+    <article class="letter">
+      <p class="meta">Gothenburg, 15 March 2026<br>Hiring Team, Example Environmental AB</p>
+      <p>Dear hiring team,</p>
+      <p>Clean water is the first thing most people stop noticing and the last thing they can live without. That idea has shaped my career, and it is why your work on resilient water infrastructure caught my attention.</p>
+      <p>Over eight years I have designed treatment systems, modelled catchments and assessed environmental impact for public and private clients. At BlueLoop Consulting I lead a small team that delivers pilots quickly, learns from the data, and adjusts. That mix of technical depth and fast iteration is what I would bring to your projects.</p>
+      <p>I am motivated by work that has a visible result: a river that runs cleaner, a plant that uses less energy, a community that trusts its water. I would welcome the chance to discuss how my experience could support your next phase of growth.</p>
+      <p>Kind regards,</p>
+      <p class="sig">László Tímea</p>
+    </article>
+  </section>
+
+  <!-- TAB 3: INFO -->
+  <section class="panel" id="info" role="tabpanel" aria-labelledby="t-info" hidden>
+    <div class="grid">
+      <div class="card wide">
+        <h2>Impact in numbers</h2>
+        <div class="stats">
+          <div><b>14</b><span class="muted">projects delivered</span></div>
+          <div><b>28%</b><span class="muted">energy saved in pilot</span></div>
+          <div><b>3</b><span class="muted">municipalities served</span></div>
+          <div><b>9</b><span class="muted">publications</span></div>
+        </div>
+      </div>
+      <div class="card">
+        <h2>Certifications</h2>
+        <ul><li>Certified Life Cycle Assessment Practitioner (2021)</li><li>Prince2 Foundation (2020)</li><li>Scrum Master PSM I (2023)</li></ul>
+      </div>
+      <div class="card">
+        <h2>Publications</h2>
+        <ul><li>“Low-energy nutrient recovery from municipal wastewater”, Water Research Letters, 2023</li><li>“Catchment-scale flood forecasting with open data”, Journal of Hydrology Applications, 2021</li></ul>
+      </div>
+      <div class="card">
+        <h2>Volunteering</h2>
+        <ul><li>River clean-up coordinator, Göta Älv Association</li><li>Mentor for first-year engineering students</li></ul>
+      </div>
+      <div class="card">
+        <h2>Interests</h2>
+        <ul><li>Trail running and kayaking</li><li>Urban beekeeping</li><li>Sketching landscapes</li></ul>
+      </div>
+      <div class="card">
+        <h2>References</h2>
+        <p class="muted" style="margin:0">Available on request. Two former managers and one academic supervisor are happy to speak.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap">© 2026 László Tímea · Dummy content, replace with final text.</div></footer>
+
+<script>
+/* ---------- Tabs ---------- */
+const tabs=[...document.querySelectorAll('.tab')];
+function show(id,focus){
+  tabs.forEach(t=>{
+    const on=t.getAttribute('aria-controls')===id;
+    t.setAttribute('aria-selected',on);
+    t.tabIndex=on?0:-1;
+    document.getElementById(t.getAttribute('aria-controls')).hidden=!on;
+    if(on&&focus)t.focus();
+  });
+  history.replaceState(null,'','#'+id);
+}
+tabs.forEach((t,i)=>{
+  t.addEventListener('click',()=>show(t.getAttribute('aria-controls')));
+  t.addEventListener('keydown',e=>{
+    const k={ArrowRight:1,ArrowLeft:-1}[e.key];
+    if(k){const n=tabs[(i+k+tabs.length)%tabs.length];show(n.getAttribute('aria-controls'),true);e.preventDefault()}
+  });
+});
+const start=location.hash.slice(1);
+if(['cv','letter','info'].includes(start))show(start);
+
+/* ---------- Persistent photo ----------
+   Order: 1) photo saved in this browser  2) DEFAULT_PHOTO file in the repo (optional)
+   To make the photo permanent for every visitor, put a file named photo.jpg
+   next to index.html and set DEFAULT_PHOTO = 'photo.jpg'. */
+const DEFAULT_PHOTO='photo.jpg';
+const KEY='cv-photo-v1';
+const img=document.getElementById('photoImg'),empty=document.getElementById('photoEmpty'),
+      file=document.getElementById('file'),rm=document.getElementById('rmBtn');
+
+function render(src){
+  if(src){img.src=src;img.hidden=false;empty.hidden=true;}
+  else{img.hidden=true;empty.hidden=false;}
+  let saved=null;try{saved=localStorage.getItem(KEY)}catch(e){}
+  rm.hidden=!saved;
+}
+function load(){
+  let saved=null;try{saved=localStorage.getItem(KEY)}catch(e){}
+  render(saved||DEFAULT_PHOTO||'');
+}
+document.getElementById('upBtn').onclick=()=>file.click();
+file.onchange=()=>{
+  const f=file.files[0]; if(!f)return;
+  const r=new FileReader();
+  r.onload=()=>{
+    const im=new Image();
+    im.onload=()=>{
+      const s=Math.min(1,700/Math.max(im.width,im.height));
+      const c=document.createElement('canvas');
+      c.width=Math.round(im.width*s);c.height=Math.round(im.height*s);
+      c.getContext('2d').drawImage(im,0,0,c.width,c.height);
+      const data=c.toDataURL('image/jpeg',.85);
+      try{localStorage.setItem(KEY,data)}catch(e){alert('The browser could not save this photo. Try a smaller image.')}
+      render(data);
+    };
+    im.src=r.result;
+  };
+  r.readAsDataURL(f);
+};
+rm.onclick=()=>{try{localStorage.removeItem(KEY)}catch(e){}load()};
+load();
+
+/* ---------- Language (Hungarian default, English in the markup) ----------
+   Every English text in the page is a key below; the value is its Hungarian version.
+   To change a text, edit it in the HTML and update the matching key here. */
+const HU={
+"Open to new projects from January":"Januártól nyitott új projektekre",
+"Environmental engineer turning water, soil and energy data into cleaner decisions.":"Környezetmérnök, aki víz-, talaj- és energiaadatokból tisztább döntéseket formál.",
+"CV":"Önéletrajz","Motivation letter":"Motivációs levél","Additional info":"További információk",
+"No photo yet.":"Még nincs fotó.","Choose an image to add one.":"Tölts fel egy képet.",
+"Upload photo":"Fotó feltöltése","Remove":"Törlés",
+"Contact":"Kapcsolat","Gothenburg, Sweden":"Göteborg, Svédország",
+"Core skills":"Fő készségek","Life-cycle assessment":"Életciklus-elemzés","Hydrological modelling":"Hidrológiai modellezés","GIS & remote sensing":"GIS és távérzékelés",
+"Languages":"Nyelvek","Swedish — native":"Svéd — anyanyelv","English — fluent":"Angol — folyékony","German — conversational":"Német — társalgási szint",
+"Profile":"Bemutatkozás",
+"Environmental engineer with eight years of experience in water treatment, circular-economy design and impact assessment. I move quickly from field data to a working prototype, and I like projects where engineering, policy and communities meet.":"Környezetmérnök nyolc év tapasztalattal a víztisztítás, a körforgásos gazdaság tervezése és a hatásvizsgálat területén. Gyorsan jutok el a terepi adatoktól a működő prototípusig, és szeretem azokat a projekteket, ahol a mérnöki munka, a szakpolitika és a közösségek találkoznak.",
+"Experience":"Szakmai tapasztalat","2022 – present":"2022 – jelenleg",
+"Senior Environmental Engineer, BlueLoop Consulting":"Vezető környezetmérnök, BlueLoop Consulting",
+"Lead a team of five designing wastewater reuse systems for three municipalities.":"Öt fős csapatot vezetek, amely három önkormányzat számára tervez szennyvíz-újrahasznosító rendszereket.",
+"Cut pilot plant energy use by 28% through process optimisation.":"Folyamatoptimalizálással 28%-kal csökkentettem a kísérleti üzem energiafogyasztását.",
+"Introduced agile sprints to project delivery, shortening reporting cycles by a third.":"Agilis sprinteket vezettem be a projektvégrehajtásba, így egyharmadával rövidültek a beszámolási ciklusok.",
+"Environmental Engineer, Nordic Water Institute":"Környezetmérnök, Nordic Water Institute",
+"Built catchment models used in regional flood-risk planning.":"Vízgyűjtő-modelleket építettem, amelyeket a regionális árvízkockázat-tervezésben használtak.",
+"Ran life-cycle assessments for 12 industrial clients.":"Életciklus-elemzéseket végeztem 12 ipari ügyfél számára.",
+"Junior Consultant, GreenPath Studio":"Junior tanácsadó, GreenPath Studio",
+"Prepared environmental impact assessments for infrastructure projects.":"Környezeti hatásvizsgálatokat készítettem infrastrukturális projektekhez.",
+"Supported field sampling and laboratory analysis.":"Támogattam a terepi mintavételt és a laboratóriumi elemzéseket.",
+"Education":"Tanulmányok","MSc Environmental Engineering":"MSc Környezetmérnöki","Chalmers University, 2016":"Chalmers Egyetem, 2016",
+"BSc Civil & Environmental Eng.":"BSc Építő- és környezetmérnöki","Lund University, 2014":"Lundi Egyetem, 2014",
+"Tools":"Eszközök",
+"Gothenburg, 15 March 2026":"Göteborg, 2026. március 15.","Hiring Team, Example Environmental AB":"Example Environmental AB, HR csapat",
+"Dear hiring team,":"Tisztelt Toborzó Csapat!",
+"Clean water is the first thing most people stop noticing and the last thing they can live without. That idea has shaped my career, and it is why your work on resilient water infrastructure caught my attention.":"A tiszta víz az első dolog, amit az emberek természetesnek vesznek, és az utolsó, amely nélkül élni tudnának. Ez a gondolat formálta a pályámat, és ezért keltette fel a figyelmemet az Önök ellenálló vízinfrastruktúrával kapcsolatos munkája.",
+"Over eight years I have designed treatment systems, modelled catchments and assessed environmental impact for public and private clients. At BlueLoop Consulting I lead a small team that delivers pilots quickly, learns from the data, and adjusts. That mix of technical depth and fast iteration is what I would bring to your projects.":"Nyolc év alatt tisztítórendszereket terveztem, vízgyűjtőket modelleztem és környezeti hatást vizsgáltam állami és magánügyfelek számára. A BlueLoop Consultingnál egy kis csapatot vezetek, amely gyorsan szállít pilotokat, tanul az adatokból és alkalmazkodik. A műszaki mélység és a gyors iteráció ezen ötvözetét hoznám az Önök projektjeibe.",
+"I am motivated by work that has a visible result: a river that runs cleaner, a plant that uses less energy, a community that trusts its water. I would welcome the chance to discuss how my experience could support your next phase of growth.":"Azok a feladatok motiválnak, amelyeknek látható eredménye van: egy tisztább folyó, egy kevesebb energiát használó üzem, egy közösség, amely bízik a vizében. Örömmel beszélnék arról, hogyan támogathatná tapasztalatom az Önök következő növekedési szakaszát.",
+"Kind regards,":"Üdvözlettel,",
+"Impact in numbers":"Eredmények számokban","projects delivered":"megvalósított projekt","energy saved in pilot":"energiamegtakarítás a pilotban","municipalities served":"kiszolgált önkormányzat","publications":"publikáció",
+"Certifications":"Tanúsítványok",
+"Certified Life Cycle Assessment Practitioner (2021)":"Okleveles életciklus-elemző szakértő (2021)","Prince2 Foundation (2020)":"Prince2 Foundation (2020)","Scrum Master PSM I (2023)":"Scrum Master PSM I (2023)",
+"Publications":"Publikációk",
+"“Low-energy nutrient recovery from municipal wastewater”, Water Research Letters, 2023":"„Kis energiaigényű tápanyag-visszanyerés kommunális szennyvízből”, Water Research Letters, 2023",
+"“Catchment-scale flood forecasting with open data”, Journal of Hydrology Applications, 2021":"„Vízgyűjtő léptékű árvízelőrejelzés nyílt adatokkal”, Journal of Hydrology Applications, 2021",
+"Volunteering":"Önkéntes munka","River clean-up coordinator, Göta Älv Association":"Folyótisztítási koordinátor, Göta Älv Egyesület","Mentor for first-year engineering students":"Mentor elsőéves mérnökhallgatók számára",
+"Interests":"Érdeklődési kör","Trail running and kayaking":"Terepfutás és kajakozás","Urban beekeeping":"Városi méhészkedés","Sketching landscapes":"Tájrajzolás",
+"References":"Referenciák","Available on request. Two former managers and one academic supervisor are happy to speak.":"Kérésre rendelkezésre állnak. Két korábbi vezetőm és egy egyetemi témavezetőm szívesen nyilatkozik.",
+"© 2026 László Tímea · Dummy content, replace with final text.":"© 2026 László Tímea · Minta tartalom, cserélendő a végleges szövegre."
+};
+const META={
+ hu:{title:'László Tímea · Környezetmérnök',desc:'László Tímea környezetmérnök önéletrajza, motivációs levele és további információi.',alt:'László Tímea portréja',tabs:'Szakaszok',err:'A böngésző nem tudta elmenteni a fotót. Próbálj kisebb képet.'},
+ en:{title:'László Tímea · Environmental Engineer',desc:'CV, motivation letter and extra information of László Tímea, environmental engineer.',alt:'Portrait of László Tímea',tabs:'Sections',err:'The browser could not save this photo. Try a smaller image.'}
+};
+const norm=s=>s.replace(/\s+/g,' ').trim();
+const nodes=[];
+const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{acceptNode:n=>
+  (n.parentElement.closest('script,style')||!norm(n.nodeValue))?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT});
+while(walker.nextNode()){const n=walker.currentNode;const k=norm(n.nodeValue);if(HU[k])nodes.push({n,k,pad:n.nodeValue.match(/^\s*/)[0],end:n.nodeValue.match(/\s*$/)[0]});}
+let lang='hu';
+function setLang(l){
+  lang=l;
+  nodes.forEach(o=>{o.n.nodeValue=o.pad+(l==='hu'?HU[o.k]:o.k)+o.end});
+  const m=META[l];
+  document.documentElement.lang=l;
+  document.title=m.title;
+  document.querySelector('meta[name=description]').content=m.desc;
+  img.alt=m.alt;
+  document.querySelector('.tabs').setAttribute('aria-label',m.tabs);
+  document.querySelectorAll('.lang button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.l===l));
+  try{localStorage.setItem('cv-lang',l)}catch(e){}
+}
+document.querySelectorAll('.lang button').forEach(b=>b.onclick=()=>setLang(b.dataset.l));
+/* the upload error message follows the active language */
+const _alert=window.alert;window.alert=()=>_alert(META[lang].err);
+let saved=null;try{saved=localStorage.getItem('cv-lang')}catch(e){}
+const q=new URLSearchParams(location.search).get('lang');
+setLang(q==='en'||q==='hu'?q:(saved||'hu'));
+</script>
+</body>
+</html>
