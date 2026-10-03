@@ -45,8 +45,8 @@ tabInfo:   { hu: `További információk`, en: `Additional info` },
 
 /* ---------- Tab 1: CV – sidebar ---------- */
 photoEmpty: {
-  hu: `Még nincs fotó.<br>Tölts fel egy képet.`,
-  en: `No photo yet.<br>Choose an image to add one.`
+  hu: ``,
+  en: ``
 },
 upload: { hu: `Fotó feltöltése`, en: `Upload photo` },
 remove: { hu: `Törlés`,          en: `Remove` },
