@@ -126,152 +126,61 @@ footer{border-top:1px solid var(--line);padding:22px 0;color:var(--muted);font-s
       <button type="button" data-l="en" aria-pressed="false">EN</button>
     </div>
     <h1>László<br>Tímea</h1>
-    <p class="role">Environmental engineer turning water, soil and energy data into cleaner decisions.</p>
-    <span class="pill">Open to new projects from January</span>
-    <div class="tabs" role="tablist" aria-label="Sections">
-      <button class="tab" role="tab" id="t-cv" aria-controls="cv" aria-selected="true">CV</button>
-      <button class="tab" role="tab" id="t-letter" aria-controls="letter" aria-selected="false" tabindex="-1">Motivation letter</button>
-      <button class="tab" role="tab" id="t-info" aria-controls="info" aria-selected="false" tabindex="-1">Additional info</button>
+    <p class="role" data-t="role"></p>
+    <span class="pill" data-t="status"></span>
+    <div class="tabs" role="tablist" id="tablist">
+      <button class="tab" role="tab" id="t-cv" aria-controls="cv" aria-selected="true" data-t="tabCv"></button>
+      <button class="tab" role="tab" id="t-letter" aria-controls="letter" aria-selected="false" tabindex="-1" data-t="tabLetter"></button>
+      <button class="tab" role="tab" id="t-info" aria-controls="info" aria-selected="false" tabindex="-1" data-t="tabInfo"></button>
     </div>
   </div>
 </header>
 
+<!-- Layout only. All text comes from content.js via the data-t="…" names. -->
 <main class="wrap">
 
-  <!-- TAB 1: CV -->
   <section class="panel cv" id="cv" role="tabpanel" aria-labelledby="t-cv">
     <aside class="side">
       <div class="photo" id="photo">
-        <img id="photoImg" alt="Portrait of László Tímea" hidden>
-        <div class="empty" id="photoEmpty"></div>
+        <img id="photoImg" hidden>
+        <div class="empty" id="photoEmpty" data-t="photoEmpty"></div>
       </div>
       <div class="photo-actions">
-        <button class="btn" id="upBtn" type="button">Upload photo</button>
-        <button class="btn ghost" id="rmBtn" type="button" hidden>Remove</button>
+        <button class="btn" id="upBtn" type="button" data-t="upload"></button>
+        <button class="btn ghost" id="rmBtn" type="button" hidden data-t="remove"></button>
         <input type="file" id="file" accept="image/*" hidden>
       </div>
-
-      <h3>Contact</h3>
-      <ul>
-        <li><a href="mailto:maya.lindqvist@example.com">maya.lindqvist@example.com</a></li>
-        <li>+46 70 123 45 67</li>
-        <li>Gothenburg, Sweden</li>
-        <li><a href="#">linkedin.com/in/mayalindqvist</a></li>
-      </ul>
-
-      <h3>Core skills</h3>
-      <div class="skill"><span>Life-cycle assessment</span><span>95%</span></div><div class="bar"><i style="width:95%"></i></div>
-      <div class="skill"><span>Hydrological modelling</span><span>90%</span></div><div class="bar"><i style="width:90%"></i></div>
-      <div class="skill"><span>GIS &amp; remote sensing</span><span>85%</span></div><div class="bar"><i style="width:85%"></i></div>
-      <div class="skill"><span>Python &amp; R</span><span>80%</span></div><div class="bar"><i style="width:80%"></i></div>
-
-      <h3>Languages</h3>
-      <ul><li>Swedish — native</li><li>English — fluent</li><li>German — conversational</li></ul>
+      <div data-t="contact"></div>
+      <div data-t="skills"></div>
+      <div data-t="languages"></div>
     </aside>
-
     <div>
-      <div class="block">
-        <h2>Profile</h2>
-        <p class="lead">Environmental engineer with eight years of experience in water treatment, circular-economy design and impact assessment. I move quickly from field data to a working prototype, and I like projects where engineering, policy and communities meet.</p>
-      </div>
-
-      <div class="block">
-        <h2>Experience</h2>
-        <div class="timeline">
-          <div class="job">
-            <div class="when">2022 – present</div>
-            <h3>Senior Environmental Engineer, BlueLoop Consulting</h3>
-            <ul>
-              <li>Lead a team of five designing wastewater reuse systems for three municipalities.</li>
-              <li>Cut pilot plant energy use by 28% through process optimisation.</li>
-              <li>Introduced agile sprints to project delivery, shortening reporting cycles by a third.</li>
-            </ul>
-          </div>
-          <div class="job">
-            <div class="when">2018 – 2022</div>
-            <h3>Environmental Engineer, Nordic Water Institute</h3>
-            <ul>
-              <li>Built catchment models used in regional flood-risk planning.</li>
-              <li>Ran life-cycle assessments for 12 industrial clients.</li>
-            </ul>
-          </div>
-          <div class="job">
-            <div class="when">2016 – 2018</div>
-            <h3>Junior Consultant, GreenPath Studio</h3>
-            <ul>
-              <li>Prepared environmental impact assessments for infrastructure projects.</li>
-              <li>Supported field sampling and laboratory analysis.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="block">
-        <h2>Education</h2>
-        <div class="edu">
-          <div><h3>MSc Environmental Engineering</h3><span class="muted">Chalmers University, 2016</span></div>
-          <div><h3>BSc Civil &amp; Environmental Eng.</h3><span class="muted">Lund University, 2014</span></div>
-        </div>
-      </div>
-
-      <div class="block">
-        <h2>Tools</h2>
-        <div class="tags"><span>ArcGIS</span><span>QGIS</span><span>SWMM</span><span>SimaPro</span><span>MODFLOW</span><span>Python</span><span>R</span><span>AutoCAD</span><span>Power BI</span></div>
-      </div>
+      <div class="block" data-t="profile"></div>
+      <div class="block" data-t="experience"></div>
+      <div class="block" data-t="education"></div>
+      <div class="block" data-t="tools"></div>
     </div>
   </section>
 
-  <!-- TAB 2: LETTER -->
   <section class="panel" id="letter" role="tabpanel" aria-labelledby="t-letter" hidden>
-    <article class="letter">
-      <p class="meta">Gothenburg, 15 March 2026<br>Hiring Team, Example Environmental AB</p>
-      <p>Dear hiring team,</p>
-      <p>Clean water is the first thing most people stop noticing and the last thing they can live without. That idea has shaped my career, and it is why your work on resilient water infrastructure caught my attention.</p>
-      <p>Over eight years I have designed treatment systems, modelled catchments and assessed environmental impact for public and private clients. At BlueLoop Consulting I lead a small team that delivers pilots quickly, learns from the data, and adjusts. That mix of technical depth and fast iteration is what I would bring to your projects.</p>
-      <p>I am motivated by work that has a visible result: a river that runs cleaner, a plant that uses less energy, a community that trusts its water. I would welcome the chance to discuss how my experience could support your next phase of growth.</p>
-      <p>Kind regards,</p>
-      <p class="sig">László Tímea</p>
-    </article>
+    <article class="letter" data-t="letter"></article>
   </section>
 
-  <!-- TAB 3: INFO -->
   <section class="panel" id="info" role="tabpanel" aria-labelledby="t-info" hidden>
     <div class="grid">
-      <div class="card wide">
-        <h2>Impact in numbers</h2>
-        <div class="stats">
-          <div><b>14</b><span class="muted">projects delivered</span></div>
-          <div><b>28%</b><span class="muted">energy saved in pilot</span></div>
-          <div><b>3</b><span class="muted">municipalities served</span></div>
-          <div><b>9</b><span class="muted">publications</span></div>
-        </div>
-      </div>
-      <div class="card">
-        <h2>Certifications</h2>
-        <ul><li>Certified Life Cycle Assessment Practitioner (2021)</li><li>Prince2 Foundation (2020)</li><li>Scrum Master PSM I (2023)</li></ul>
-      </div>
-      <div class="card">
-        <h2>Publications</h2>
-        <ul><li>“Low-energy nutrient recovery from municipal wastewater”, Water Research Letters, 2023</li><li>“Catchment-scale flood forecasting with open data”, Journal of Hydrology Applications, 2021</li></ul>
-      </div>
-      <div class="card">
-        <h2>Volunteering</h2>
-        <ul><li>River clean-up coordinator, Göta Älv Association</li><li>Mentor for first-year engineering students</li></ul>
-      </div>
-      <div class="card">
-        <h2>Interests</h2>
-        <ul><li>Trail running and kayaking</li><li>Urban beekeeping</li><li>Sketching landscapes</li></ul>
-      </div>
-      <div class="card">
-        <h2>References</h2>
-        <p class="muted" style="margin:0">Available on request. Two former managers and one academic supervisor are happy to speak.</p>
-      </div>
+      <div class="card wide" data-t="stats"></div>
+      <div class="card" data-t="certifications"></div>
+      <div class="card" data-t="publications"></div>
+      <div class="card" data-t="volunteering"></div>
+      <div class="card" data-t="interests"></div>
+      <div class="card" data-t="references"></div>
     </div>
   </section>
 </main>
 
-<footer><div class="wrap">© 2026 László Tímea · Dummy content, replace with final text.</div></footer>
+<footer><div class="wrap" data-t="footer"></div></footer>
 
+<script src="content.js"></script>
 <script>
 /* ---------- Tabs ---------- */
 const tabs=[...document.querySelectorAll('.tab')];
@@ -296,13 +205,13 @@ const start=location.hash.slice(1);
 if(['cv','letter','info'].includes(start))show(start);
 
 /* ---------- Persistent photo ----------
-   Order: 1) photo saved in this browser  2) DEFAULT_PHOTO file in the repo (optional)
-   To make the photo permanent for every visitor, put a file named photo.jpg
-   next to index.html and set DEFAULT_PHOTO = 'photo.jpg'. */
-const DEFAULT_PHOTO='photo.jpg';
+   1) photo saved in this browser  2) DEFAULT_PHOTO file in the repo (optional)
+   For every visitor: commit photo.jpg next to index.html and set DEFAULT_PHOTO='photo.jpg'. */
+const DEFAULT_PHOTO='';
 const KEY='cv-photo-v1';
 const img=document.getElementById('photoImg'),empty=document.getElementById('photoEmpty'),
       file=document.getElementById('file'),rm=document.getElementById('rmBtn');
+let lang='hu';
 
 function render(src){
   if(src){img.src=src;img.hidden=false;empty.hidden=true;}
@@ -326,7 +235,7 @@ file.onchange=()=>{
       c.width=Math.round(im.width*s);c.height=Math.round(im.height*s);
       c.getContext('2d').drawImage(im,0,0,c.width,c.height);
       const data=c.toDataURL('image/jpeg',.85);
-      try{localStorage.setItem(KEY,data)}catch(e){alert('The browser could not save this photo. Try a smaller image.')}
+      try{localStorage.setItem(KEY,data)}catch(e){alert(T.uploadError[lang])}
       render(data);
     };
     im.src=r.result;
@@ -334,81 +243,27 @@ file.onchange=()=>{
   r.readAsDataURL(f);
 };
 rm.onclick=()=>{try{localStorage.removeItem(KEY)}catch(e){}load()};
-load();
 
-/* ---------- Language (Hungarian default, English in the markup) ----------
-   Every English text in the page is a key below; the value is its Hungarian version.
-   To change a text, edit it in the HTML and update the matching key here. */
-const HU={
-"Open to new projects from January":"Januártól nyitott új projektekre",
-"Environmental engineer turning water, soil and energy data into cleaner decisions.":"Környezetmérnök, aki víz-, talaj- és energiaadatokból tisztább döntéseket formál.",
-"CV":"Önéletrajz","Motivation letter":"Motivációs levél","Additional info":"További információk",
-"No photo yet.":"Még nincs fotó.","Choose an image to add one.":"Tölts fel egy képet.",
-"Upload photo":"Fotó feltöltése","Remove":"Törlés",
-"Contact":"Kapcsolat","Gothenburg, Sweden":"Göteborg, Svédország",
-"Core skills":"Fő készségek","Life-cycle assessment":"Életciklus-elemzés","Hydrological modelling":"Hidrológiai modellezés","GIS & remote sensing":"GIS és távérzékelés",
-"Languages":"Nyelvek","Swedish — native":"Svéd — anyanyelv","English — fluent":"Angol — folyékony","German — conversational":"Német — társalgási szint",
-"Profile":"Bemutatkozás",
-"Environmental engineer with eight years of experience in water treatment, circular-economy design and impact assessment. I move quickly from field data to a working prototype, and I like projects where engineering, policy and communities meet.":"Környezetmérnök nyolc év tapasztalattal a víztisztítás, a körforgásos gazdaság tervezése és a hatásvizsgálat területén. Gyorsan jutok el a terepi adatoktól a működő prototípusig, és szeretem azokat a projekteket, ahol a mérnöki munka, a szakpolitika és a közösségek találkoznak.",
-"Experience":"Szakmai tapasztalat","2022 – present":"2022 – jelenleg",
-"Senior Environmental Engineer, BlueLoop Consulting":"Vezető környezetmérnök, BlueLoop Consulting",
-"Lead a team of five designing wastewater reuse systems for three municipalities.":"Öt fős csapatot vezetek, amely három önkormányzat számára tervez szennyvíz-újrahasznosító rendszereket.",
-"Cut pilot plant energy use by 28% through process optimisation.":"Folyamatoptimalizálással 28%-kal csökkentettem a kísérleti üzem energiafogyasztását.",
-"Introduced agile sprints to project delivery, shortening reporting cycles by a third.":"Agilis sprinteket vezettem be a projektvégrehajtásba, így egyharmadával rövidültek a beszámolási ciklusok.",
-"Environmental Engineer, Nordic Water Institute":"Környezetmérnök, Nordic Water Institute",
-"Built catchment models used in regional flood-risk planning.":"Vízgyűjtő-modelleket építettem, amelyeket a regionális árvízkockázat-tervezésben használtak.",
-"Ran life-cycle assessments for 12 industrial clients.":"Életciklus-elemzéseket végeztem 12 ipari ügyfél számára.",
-"Junior Consultant, GreenPath Studio":"Junior tanácsadó, GreenPath Studio",
-"Prepared environmental impact assessments for infrastructure projects.":"Környezeti hatásvizsgálatokat készítettem infrastrukturális projektekhez.",
-"Supported field sampling and laboratory analysis.":"Támogattam a terepi mintavételt és a laboratóriumi elemzéseket.",
-"Education":"Tanulmányok","MSc Environmental Engineering":"MSc Környezetmérnöki","Chalmers University, 2016":"Chalmers Egyetem, 2016",
-"BSc Civil & Environmental Eng.":"BSc Építő- és környezetmérnöki","Lund University, 2014":"Lundi Egyetem, 2014",
-"Tools":"Eszközök",
-"Gothenburg, 15 March 2026":"Göteborg, 2026. március 15.","Hiring Team, Example Environmental AB":"Example Environmental AB, HR csapat",
-"Dear hiring team,":"Tisztelt Toborzó Csapat!",
-"Clean water is the first thing most people stop noticing and the last thing they can live without. That idea has shaped my career, and it is why your work on resilient water infrastructure caught my attention.":"A tiszta víz az első dolog, amit az emberek természetesnek vesznek, és az utolsó, amely nélkül élni tudnának. Ez a gondolat formálta a pályámat, és ezért keltette fel a figyelmemet az Önök ellenálló vízinfrastruktúrával kapcsolatos munkája.",
-"Over eight years I have designed treatment systems, modelled catchments and assessed environmental impact for public and private clients. At BlueLoop Consulting I lead a small team that delivers pilots quickly, learns from the data, and adjusts. That mix of technical depth and fast iteration is what I would bring to your projects.":"Nyolc év alatt tisztítórendszereket terveztem, vízgyűjtőket modelleztem és környezeti hatást vizsgáltam állami és magánügyfelek számára. A BlueLoop Consultingnál egy kis csapatot vezetek, amely gyorsan szállít pilotokat, tanul az adatokból és alkalmazkodik. A műszaki mélység és a gyors iteráció ezen ötvözetét hoznám az Önök projektjeibe.",
-"I am motivated by work that has a visible result: a river that runs cleaner, a plant that uses less energy, a community that trusts its water. I would welcome the chance to discuss how my experience could support your next phase of growth.":"Azok a feladatok motiválnak, amelyeknek látható eredménye van: egy tisztább folyó, egy kevesebb energiát használó üzem, egy közösség, amely bízik a vizében. Örömmel beszélnék arról, hogyan támogathatná tapasztalatom az Önök következő növekedési szakaszát.",
-"Kind regards,":"Üdvözlettel,",
-"Impact in numbers":"Eredmények számokban","projects delivered":"megvalósított projekt","energy saved in pilot":"energiamegtakarítás a pilotban","municipalities served":"kiszolgált önkormányzat","publications":"publikáció",
-"Certifications":"Tanúsítványok",
-"Certified Life Cycle Assessment Practitioner (2021)":"Okleveles életciklus-elemző szakértő (2021)","Prince2 Foundation (2020)":"Prince2 Foundation (2020)","Scrum Master PSM I (2023)":"Scrum Master PSM I (2023)",
-"Publications":"Publikációk",
-"“Low-energy nutrient recovery from municipal wastewater”, Water Research Letters, 2023":"„Kis energiaigényű tápanyag-visszanyerés kommunális szennyvízből”, Water Research Letters, 2023",
-"“Catchment-scale flood forecasting with open data”, Journal of Hydrology Applications, 2021":"„Vízgyűjtő léptékű árvízelőrejelzés nyílt adatokkal”, Journal of Hydrology Applications, 2021",
-"Volunteering":"Önkéntes munka","River clean-up coordinator, Göta Älv Association":"Folyótisztítási koordinátor, Göta Älv Egyesület","Mentor for first-year engineering students":"Mentor elsőéves mérnökhallgatók számára",
-"Interests":"Érdeklődési kör","Trail running and kayaking":"Terepfutás és kajakozás","Urban beekeeping":"Városi méhészkedés","Sketching landscapes":"Tájrajzolás",
-"References":"Referenciák","Available on request. Two former managers and one academic supervisor are happy to speak.":"Kérésre rendelkezésre állnak. Két korábbi vezetőm és egy egyetemi témavezetőm szívesen nyilatkozik.",
-"© 2026 László Tímea · Dummy content, replace with final text.":"© 2026 László Tímea · Minta tartalom, cserélendő a végleges szövegre."
-};
-const META={
- hu:{title:'László Tímea · Környezetmérnök',desc:'László Tímea környezetmérnök önéletrajza, motivációs levele és további információi.',alt:'László Tímea portréja',tabs:'Szakaszok',err:'A böngésző nem tudta elmenteni a fotót. Próbálj kisebb képet.'},
- en:{title:'László Tímea · Environmental Engineer',desc:'CV, motivation letter and extra information of László Tímea, environmental engineer.',alt:'Portrait of László Tímea',tabs:'Sections',err:'The browser could not save this photo. Try a smaller image.'}
-};
-const norm=s=>s.replace(/\s+/g,' ').trim();
-const nodes=[];
-const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{acceptNode:n=>
-  (n.parentElement.closest('script,style')||!norm(n.nodeValue))?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT});
-while(walker.nextNode()){const n=walker.currentNode;const k=norm(n.nodeValue);if(HU[k])nodes.push({n,k,pad:n.nodeValue.match(/^\s*/)[0],end:n.nodeValue.match(/\s*$/)[0]});}
-let lang='hu';
+/* ---------- Language: fills every [data-t] element from content.js ---------- */
 function setLang(l){
   lang=l;
-  nodes.forEach(o=>{o.n.nodeValue=o.pad+(l==='hu'?HU[o.k]:o.k)+o.end});
-  const m=META[l];
+  document.querySelectorAll('[data-t]').forEach(el=>{
+    const b=T[el.dataset.t];
+    if(b&&b[l]!==undefined)el.innerHTML=b[l]; else console.warn('Missing content block:',el.dataset.t,l);
+  });
   document.documentElement.lang=l;
-  document.title=m.title;
-  document.querySelector('meta[name=description]').content=m.desc;
-  img.alt=m.alt;
-  document.querySelector('.tabs').setAttribute('aria-label',m.tabs);
+  document.title=T.pageTitle[l];
+  document.querySelector('meta[name=description]').content=T.pageDesc[l];
+  img.alt=T.photoAlt[l];
+  document.getElementById('tablist').setAttribute('aria-label',T.tabsLabel[l]);
   document.querySelectorAll('.lang button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.l===l));
   try{localStorage.setItem('cv-lang',l)}catch(e){}
 }
 document.querySelectorAll('.lang button').forEach(b=>b.onclick=()=>setLang(b.dataset.l));
-/* the upload error message follows the active language */
-const _alert=window.alert;window.alert=()=>_alert(META[lang].err);
-let saved=null;try{saved=localStorage.getItem('cv-lang')}catch(e){}
+let savedLang=null;try{savedLang=localStorage.getItem('cv-lang')}catch(e){}
 const q=new URLSearchParams(location.search).get('lang');
-setLang(q==='en'||q==='hu'?q:(saved||'hu'));
+setLang(q==='en'||q==='hu'?q:(savedLang||'hu'));
+load();
 </script>
 </body>
 </html>
