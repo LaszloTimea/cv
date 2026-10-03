@@ -129,57 +129,41 @@ experience: {
   hu: `<h2>Szakmai tapasztalat</h2>
 <div class="timeline">
   <div class="job">
-    <div class="when">2022 – jelenleg</div>
-    <h3>Vezető környezetmérnök, BlueLoop Consulting</h3>
-    <ul>
-      <li>Öt fős csapatot vezetek, amely három önkormányzat számára tervez szennyvíz-újrahasznosító rendszereket.</li>
-      <li>Folyamatoptimalizálással 28%-kal csökkentettem a kísérleti üzem energiafogyasztását.</li>
-      <li>Agilis sprinteket vezettem be a projektvégrehajtásba, így egyharmadával rövidültek a beszámolási ciklusok.</li>
-    </ul>
+    <div class="when">2026.feb. – Jelenleg</div>
+    <h3>Előkészítő mérnök, Geo-Terra Kft.</h3>
+    <p>Műszaki dokumentációk összeállítása, labor- és terepi adatok feldolgozása, fúrásszelvények és műszaki rajzok szerkesztése AutoCAD használatával.</p>
+   
   </div>
   <div class="job">
-    <div class="when">2018 – 2022</div>
-    <h3>Környezetmérnök, Nordic Water Institute</h3>
-    <ul>
-      <li>Vízgyűjtő-modelleket építettem, amelyeket a regionális árvízkockázat-tervezésben használtak.</li>
-      <li>Életciklus-elemzéseket végeztem 12 ipari ügyfél számára.</li>
-    </ul>
-  </div>
+    <div class="when">2022.aug. – 2026.feb.</div>
+    <h3>Laboráns, Geo-Terra Kft.</h3>
+    <p>Talajmechanikai laborvizsgálatok (szemeloszlás, plasztikus index, k-tényező)</p>
+    
+   </div>
   <div class="job">
-    <div class="when">2016 – 2018</div>
-    <h3>Junior tanácsadó, GreenPath Studio</h3>
-    <ul>
-      <li>Környezeti hatásvizsgálatokat készítettem infrastrukturális projektekhez.</li>
-      <li>Támogattam a terepi mintavételt és a laboratóriumi elemzéseket.</li>
-    </ul>
+    <div class="when">2019.aug. – 2019.nov.</div>
+    <h3>Szakmai gyakorlat, V-Geotechnika Bt.</h3>
+    <p>Terepi talaj és vízmintavétel, laboratóriumi talajmechanikai vizsgálatok</p> 
   </div>
 </div>`,
   en: `<h2>Experience</h2>
 <div class="timeline">
   <div class="job">
-    <div class="when">2022 – present</div>
-    <h3>Senior Environmental Engineer, BlueLoop Consulting</h3>
-    <ul>
-      <li>Lead a team of five designing wastewater reuse systems for three municipalities.</li>
-      <li>Cut pilot plant energy use by 28% through process optimisation.</li>
-      <li>Introduced agile sprints to project delivery, shortening reporting cycles by a third.</li>
-    </ul>
-  </div>
+    <div class="when">2026.feb. – Present</div>
+    <h3>Engineering coordinator, Geo-Terra Kft.</h3>
+    <p>Preparation of technical documentation, processing of laboratory and field data, editing of borehole logs and technical drawings using AutoCAD. </p>
+
+ </div>
   <div class="job">
-    <div class="when">2018 – 2022</div>
-    <h3>Environmental Engineer, Nordic Water Institute</h3>
-    <ul>
-      <li>Built catchment models used in regional flood-risk planning.</li>
-      <li>Ran life-cycle assessments for 12 industrial clients.</li>
-    </ul>
-  </div>
+    <div class="when">2022.aug. – 2026.feb.</div>
+    <h3>Laboratory technicant, Geo-Terra Kft.</h3>
+    <p>Soil laboratory testing (grain size distribution, plasticity index, k-factor etc.)</p>
+    
+   </div>
   <div class="job">
-    <div class="when">2016 – 2018</div>
-    <h3>Junior Consultant, GreenPath Studio</h3>
-    <ul>
-      <li>Prepared environmental impact assessments for infrastructure projects.</li>
-      <li>Supported field sampling and laboratory analysis.</li>
-    </ul>
+    <div class="when">2019.aug. – 2019.nov.</div>
+    <h3>Professional internship, V-Geotechnika Bt.</h3>
+    <p>Field soil and water sampling, laboratory soil mechanics testing.</p> 
   </div>
 </div>`
 },
@@ -187,21 +171,18 @@ experience: {
 education: {
   hu: `<h2>Tanulmányok</h2>
 <div class="edu">
-  <div><h3>MSc Környezetmérnöki</h3><span class="muted">Chalmers Egyetem, 2016</span></div>
-  <div><h3>BSc Építő- és környezetmérnöki</h3><span class="muted">Lundi Egyetem, 2014</span></div>
+  <div><h3>Környezetmérnök Msc</h3><span class="muted">Óbudai Egyetem 2026.febr.</span></div>
+  <div><h3>Geológia Msc</h3><span class="muted">ELTE, 2022.jún.</span></div>
+  <div><h3>Földtudományi Bsc</h3><span class="muted">Debreceni Egyetem, 2020.jún.</span></div>
 </div>`,
+
+   
   en: `<h2>Education</h2>
 <div class="edu">
-  <div><h3>MSc Environmental Engineering</h3><span class="muted">Chalmers University, 2016</span></div>
-  <div><h3>BSc Civil &amp; Environmental Eng.</h3><span class="muted">Lund University, 2014</span></div>
+   <div><h3>Environmental engineering Msc</h3><span class="muted">Óbudai Egyetem 2026.febr.</span></div>
+  <div><h3>Geology Msc</h3><span class="muted">ELTE, 2022.jun.</span></div>
+  <div><h3>Earth Science Bsc</h3><span class="muted">Debreceni Egyetem, 2020.jun.</span></div>
 </div>`
-},
-
-tools: {
-  hu: `<h2>Eszközök</h2>
-<div class="tags"><span>ArcGIS</span><span>QGIS</span><span>SWMM</span><span>SimaPro</span><span>MODFLOW</span><span>Python</span><span>R</span><span>AutoCAD</span><span>Power BI</span></div>`,
-  en: `<h2>Tools</h2>
-<div class="tags"><span>ArcGIS</span><span>QGIS</span><span>SWMM</span><span>SimaPro</span><span>MODFLOW</span><span>Python</span><span>R</span><span>AutoCAD</span><span>Power BI</span></div>`
 },
 
 /* ---------- Tab 2: Motivation letter (whole letter = one block) ---------- */
@@ -249,43 +230,53 @@ stats: {
 
 certifications: {
   hu: `<h2>Tanúsítványok</h2>
-<ul><li>Okleveles életciklus-elemző szakértő (2021)</li><li>Prince2 Foundation (2020)</li><li>Scrum Master PSM I (2023)</li></ul>`,
+<ul><li>Autodesk AutoCAD - Beginner to Avanced level (2026. márc.)</li></ul>`,
   en: `<h2>Certifications</h2>
-<ul><li>Certified Life Cycle Assessment Practitioner (2021)</li><li>Prince2 Foundation (2020)</li><li>Scrum Master PSM I (2023)</li></ul>`
+<ul><li>Autodesk AutoCAD - Beginner to Avanced level (2026. march)</li></ul>`,
 },
 
 publications: {
   hu: `<h2>Publikációk</h2>
-<ul><li>„Kis energiaigényű tápanyag-visszanyerés kommunális szennyvízből”, Water Research Letters, 2023</li><li>„Vízgyűjtő léptékű árvízelőrejelzés nyílt adatokkal”, Journal of Hydrology Applications, 2021</li></ul>`,
+<ul><li>László T. et al. (2021): Micro-Pixe investigation of the trace elements in the minerals of the Rózsabánya hydrothermal ore deposit (Börzsöny Mts., North Hungary) – Acta Mineralogica- Petrographica, Abstract Series, Szeged, Vol. 11.</li></ul>`,
   en: `<h2>Publications</h2>
-<ul><li>“Low-energy nutrient recovery from municipal wastewater”, Water Research Letters, 2023</li><li>“Catchment-scale flood forecasting with open data”, Journal of Hydrology Applications, 2021</li></ul>`
+<ul><li>László T. et al. (2021): Micro-Pixe investigation of the trace elements in the minerals of the Rózsabánya hydrothermal ore deposit (Börzsöny Mts., North Hungary) – Acta Mineralogica- Petrographica, Abstract Series, Szeged, Vol. 11.</li></ul>`
 },
-
-volunteering: {
-  hu: `<h2>Önkéntes munka</h2>
-<ul><li>Folyótisztítási koordinátor, Göta Älv Egyesület</li><li>Mentor elsőéves mérnökhallgatók számára</li></ul>`,
-  en: `<h2>Volunteering</h2>
-<ul><li>River clean-up coordinator, Göta Älv Association</li><li>Mentor for first-year engineering students</li></ul>`
+   
+accomplishments: {
+  hu: `
+<ul>
+<li>Környezetföldtani viszonyok tisztázása egy szennyezett területen - Msc diplomamunka (2026) </li>
+<li>Ásványtani folyamatok uránérc meddőjének permeábilis reaktív gátjában - Msc diplomamunka (2022)</li>
+<li>A Börzsöny-hegység hidrotermás érceinek ásványtani vizsgálata - Bsc szakdolgozat (2020)</li>
+<li>8th Mineral Sciences in the Carpathians Conference - Konferencia (2021)</li>
+</ul>`,
+  en: `
+<ul>
+<li>Clarification of the Environmental Geological Conditions of a Contaminated Site - Msc Thesis (2026) </li>
+<li>Mineralogical processes in the waste rock pile of a uranium ore permeable reactive barrier - Msc Thesis (2022)</li>
+<li>The mineralogical analysis of hydrothermal ores in the Börzsöny Mountains - Bsc Thesis (2020)</li>
+<li>8th Mineral Sciences in the Carpathians Conference (2021)</li>
+</ul>`
 },
-
+   
 interests: {
   hu: `<h2>Érdeklődési kör</h2>
-<ul><li>Terepfutás és kajakozás</li><li>Városi méhészkedés</li><li>Tájrajzolás</li></ul>`,
+<ul><li>Olvasás</li><li>Hobbi cukrászat</li><li>Fitnesz</li></ul>`,
   en: `<h2>Interests</h2>
-<ul><li>Trail running and kayaking</li><li>Urban beekeeping</li><li>Sketching landscapes</li></ul>`
+<ul><li>Reading</li><li>Hobby baking</li><li>Fitness</li></ul>`
 },
 
 references: {
   hu: `<h2>Referenciák</h2>
-<p class="muted" style="margin:0">Kérésre rendelkezésre állnak. Két korábbi vezetőm és egy egyetemi témavezetőm szívesen nyilatkozik.</p>`,
+<p class="muted" style="margin:0">Kérésre rendelkezésre állnak.</p>`,
   en: `<h2>References</h2>
-<p class="muted" style="margin:0">Available on request. Two former managers and one academic supervisor are happy to speak.</p>`
+<p class="muted" style="margin:0">Available on request.</p>`
 },
 
 /* ---------- Footer ---------- */
 footer: {
-  hu: `© 2026 Maya Lindqvist · Minta tartalom, cserélendő a végleges szövegre.`,
-  en: `© 2026 Maya Lindqvist · Dummy content, replace with final text.`
+  hu: `© 2026 László Tímea`,
+  en: `© 2026 Tímea László`
 }
 
 };
