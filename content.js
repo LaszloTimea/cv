@@ -55,7 +55,7 @@ contact: {
   hu: `<h3>Személyes adatok</h3>
 <ul>
   <li><a href="mailto:timealaszlo97@gmail.com">timealaszlo97@gmail.com</a></li>
-  <li><a href="tel:+36203846611>+36 20 384 6611</a></li>
+  <li><a href="tel:+36203846611">+36 20 384 6611</a></li>
   <li>Budapest, XI. kerület</li>
   <li>Jogosítvány: B kategória</li>
   <li><a href="https://www.linkedin.com/in/t%C3%ADmea-l%C3%A1szl%C3%B3-19a780258/" target="_blank">LinkedIn profil</a></li>
