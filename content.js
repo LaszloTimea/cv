@@ -56,7 +56,7 @@ contact: {
 <ul>
   <li><a href="mailto:timealaszlo97@gmail.com">timealaszlo97@gmail.com</a></li>
   <li>+36 20 384 6611</li>
-  <li>Budapest, XI.kerület</li>
+  <li>Budapest, XI. kerület</li>
   <li>Jogosítvány: B kategória</li>
   <li><a href="#">linkedin.com/in/tímea-lászló-19a780258</a></li>
 </ul>`,
