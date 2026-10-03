@@ -243,14 +243,14 @@ publications: {
 },
    
 accomplishments: {
-  hu: `
+  hu: `<h2>Egyéb eredmények</h2>
 <ul>
 <li>Környezetföldtani viszonyok tisztázása egy szennyezett területen - Msc diplomamunka (2026) </li>
 <li>Ásványtani folyamatok uránérc meddőjének permeábilis reaktív gátjában - Msc diplomamunka (2022)</li>
 <li>A Börzsöny-hegység hidrotermás érceinek ásványtani vizsgálata - Bsc szakdolgozat (2020)</li>
 <li>8th Mineral Sciences in the Carpathians Conference - Konferencia (2021)</li>
 </ul>`,
-  en: `
+  en: `<h2>Accomplishments</h2>
 <ul>
 <li>Clarification of the Environmental Geological Conditions of a Contaminated Site - Msc Thesis (2026) </li>
 <li>Mineralogical processes in the waste rock pile of a uranium ore permeable reactive barrier - Msc Thesis (2022)</li>
