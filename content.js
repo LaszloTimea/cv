@@ -111,16 +111,13 @@ personal: {
 /* ---------- Tab 1: CV – main column ---------- */
 profile: {
   hu: `<h2>Bemutatkozás</h2>
-<p class="lead">Geológus és környezetmérnök MSc végzettséggel rendelkezem, környezetmérnöki tanulmányaimat EHS specializációval végeztem. Szakmai érdeklődésem középpontjában a környezetszennyezés, a szennyezett területek vizsgálata, a felszín alatti vizek védelme, valamint a környezeti kockázatok feltárása áll.
-Diplomamunkámat az ELGOSCAR Környezettechnológiai Zrt. közreműködésével, a pétfürdői régi nitrogénművek területén található történelmileg szennyezett területének környezetföldtani és vízföldtani viszonyait vizsgáltam, potenciális szennyezőanyag útvonalak, hidraulikai kapcsolatok azonosítása érdekében. A kutatás során terepi vizsgálatokban is részt vettem.
-Jelenleg geotechnikai előkészítő mérnökként dolgozom, ahol műszaki dokumentációk összeállításával, terepi és laboratóriumi adatok feldolgozásával, valamint tervezési feladatok előkészítésével támogatom a mérnöki munkát. 
-Célom, hogy komplex környezetvédelmi projektekben alkalmazzam megszerzett tudásomat, és egy szakmailag elkötelezett, együttműködő csapat tagjaként járuljak hozzá közös céljaink megvalósításához.
-</p>`,
+<p class="lead">Geológus és környezetmérnök MSc végzettséggel, EHS specializációval rendelkezem. 
+Fő szakmai érdeklődési területeim a szennyezett területek vizsgálata és a felszín alatti vizek védelme és a környezeti kockázatok feltárása felé irányul. 
+Ismereteimet környezetvédelmi projektekben, engedélyezési eljárásokban és a környezetvédelmi tanácsadás területén szeretném tovább kamatoztatni és bővíteni.</p>`,
   en: `<h2>Profile</h2>
-<p class="lead">I hold MSc degrees in both Geology and Environmental Engineering, with a specialization in Environmental, Health and Safety (EHS). 
-My professional interests focus on environmental contamination, contaminated site investigation, groundwater protection and environmental risk assessment. For my Environmental Engineering MSc thesis, carried out in cooperation with ELGOSCAR Környezettechnológiai Zrt., I investigated the environmental and hydrogeological conditions of a historically contaminated industrial site in Pétfürdő, with a particular focus on potential contaminant pathways and hydraulic connections. The work also involved field investigations. 
-I currently work as an Engineering Coordinator, supporting engineering activities through the preparation of technical documentation, the processing of field and laboratory data, and the preparation of geotechnical design tasks. 
-I am looking to apply my knowledge and experience in complex environmental projects and contribute to a professionally committed and collaborative team.
+<p class="lead">I hold MSc degrees in Geology and Environmental Engineering, with a specialization in EHS. 
+My main professional interests include contaminated site investigation, groundwater protection, and environmental risk assessment. 
+I am looking to further apply and expand my knowledge through environmental projects, permitting procedures, and environmental consulting.
 </p>`
 },
 
