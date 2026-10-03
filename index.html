@@ -205,40 +205,18 @@ if(['cv','letter','info'].includes(start))show(start);
    For every visitor: commit photo.jpg next to index.html and set DEFAULT_PHOTO='photo.jpg'. */
 const DEFAULT_PHOTO='photo.jpg';
 const KEY='cv-photo-v1';
-const img=document.getElementById('photoImg'),empty=document.getElementById('photoEmpty'),
-      file=document.getElementById('file'),rm=document.getElementById('rmBtn');
+const img=document.getElementById('photoImg'),empty=document.getElementById('photoEmpty');
 let lang='hu';
 
 function render(src){
   if(src){img.src=src;img.hidden=false;empty.hidden=true;}
   else{img.hidden=true;empty.hidden=false;}
   let saved=null;try{saved=localStorage.getItem(KEY)}catch(e){}
-  rm.hidden=!saved;
 }
 function load(){
   let saved=null;try{saved=localStorage.getItem(KEY)}catch(e){}
   render(saved||DEFAULT_PHOTO||'');
 }
-document.getElementById('upBtn').onclick=()=>file.click();
-file.onchange=()=>{
-  const f=file.files[0]; if(!f)return;
-  const r=new FileReader();
-  r.onload=()=>{
-    const im=new Image();
-    im.onload=()=>{
-      const s=Math.min(1,700/Math.max(im.width,im.height));
-      const c=document.createElement('canvas');
-      c.width=Math.round(im.width*s);c.height=Math.round(im.height*s);
-      c.getContext('2d').drawImage(im,0,0,c.width,c.height);
-      const data=c.toDataURL('image/jpeg',.85);
-      try{localStorage.setItem(KEY,data)}catch(e){alert(T.uploadError[lang])}
-      render(data);
-    };
-    im.src=r.result;
-  };
-  r.readAsDataURL(f);
-};
-rm.onclick=()=>{try{localStorage.removeItem(KEY)}catch(e){}load()};
 
 /* ---------- Language: fills every [data-t] element from content.js ---------- */
 function setLang(l){
