@@ -10,16 +10,16 @@ const T = {
 
 /* ---------- Page settings (plain text, no HTML) ---------- */
 pageTitle: {
-  hu: `Maya Lindqvist · Környezetmérnök`,
-  en: `Maya Lindqvist · Environmental Engineer`
+  hu: `László Tímea · Okleveles környezetmérnök`,
+  en: `Tímea László · Environmental Engineer`
 },
 pageDesc: {
-  hu: `Maya Lindqvist környezetmérnök önéletrajza, motivációs levele és további információi.`,
-  en: `CV, motivation letter and extra information of Maya Lindqvist, environmental engineer.`
+  hu: `László Tímea környezetmérnök önéletrajza, motivációs levele és további információi.`,
+  en: `CV, motivation letter and extra information of Tímea László, environmental engineer.`
 },
 photoAlt: {
-  hu: `Maya Lindqvist portréja`,
-  en: `Portrait of Maya Lindqvist`
+  hu: `László Tímea portréja`,
+  en: `Portrait of Tímea László`
 },
 tabsLabel: {
   hu: `Szakaszok`,
@@ -32,12 +32,12 @@ uploadError: {
 
 /* ---------- Header ---------- */
 role: {
-  hu: `Környezetmérnök, aki víz-, talaj- és energiaadatokból tisztább döntéseket formál.`,
-  en: `Environmental engineer turning water, soil and energy data into cleaner decisions.`
+  hu: `Okleveles örnyezetmérnök és geológus`,
+  en: `Environmental engineer and geologist`
 },
 status: {
-  hu: `Januártól nyitott új projektekre`,
-  en: `Open to new projects from January`
+  hu: `Nyitott új munkalehetőségekre`,
+  en: `Open to new job opportunities`
 },
 tabCv:     { hu: `Önéletrajz`,          en: `CV` },
 tabLetter: { hu: `Motivációs levél`,    en: `Motivation letter` },
@@ -52,49 +52,76 @@ upload: { hu: `Fotó feltöltése`, en: `Upload photo` },
 remove: { hu: `Törlés`,          en: `Remove` },
 
 contact: {
-  hu: `<h3>Kapcsolat</h3>
+  hu: `<h3>Személyes adatok</h3>
 <ul>
-  <li><a href="mailto:maya.lindqvist@example.com">maya.lindqvist@example.com</a></li>
-  <li>+46 70 123 45 67</li>
-  <li>Göteborg, Svédország</li>
-  <li><a href="#">linkedin.com/in/mayalindqvist</a></li>
+  <li><a href="mailto:timealaszlo97@gmail.com">timealaszlo97@gmail.com</a></li>
+  <li>+36 20 384 6611</li>
+  <li>Budapest, XI.kerület</li>
+  <li>Jogosítvány: B kategória</li>
+  <li><a href="#">linkedin.com/in/tímea-lászló-19a780258</a></li>
 </ul>`,
-  en: `<h3>Contact</h3>
+  en: `<h3>Details</h3>
 <ul>
-  <li><a href="mailto:maya.lindqvist@example.com">maya.lindqvist@example.com</a></li>
-  <li>+46 70 123 45 67</li>
-  <li>Gothenburg, Sweden</li>
-  <li><a href="#">linkedin.com/in/mayalindqvist</a></li>
+  <li><a href="mailto:timealaszlo97@gmail.com">timealaszlo97@gmail.com</a></li>
+  <li>+36 20 384 6611</li>
+  <li>Budapest, XI. district</li>
+  <li>Driving license: European B</li>
+  <li><a href="#">linkedin.com/in/tímea-lászló-19a780258</a></li>
 </ul>`
 },
 
 /* Skills: change the percentage in BOTH the text and the width:NN% */
 skills: {
-  hu: `<h3>Fő készségek</h3>
-<div class="skill"><span>Életciklus-elemzés</span><span>95%</span></div><div class="bar"><i style="width:95%"></i></div>
-<div class="skill"><span>Hidrológiai modellezés</span><span>90%</span></div><div class="bar"><i style="width:90%"></i></div>
-<div class="skill"><span>GIS és távérzékelés</span><span>85%</span></div><div class="bar"><i style="width:85%"></i></div>
-<div class="skill"><span>Python és R</span><span>80%</span></div><div class="bar"><i style="width:80%"></i></div>`,
-  en: `<h3>Core skills</h3>
-<div class="skill"><span>Life-cycle assessment</span><span>95%</span></div><div class="bar"><i style="width:95%"></i></div>
-<div class="skill"><span>Hydrological modelling</span><span>90%</span></div><div class="bar"><i style="width:90%"></i></div>
-<div class="skill"><span>GIS &amp; remote sensing</span><span>85%</span></div><div class="bar"><i style="width:85%"></i></div>
-<div class="skill"><span>Python &amp; R</span><span>80%</span></div><div class="bar"><i style="width:80%"></i></div>`
+  hu: `<h3>Szoftveres ismeretek</h3>
+<div class="skill"><span>AutoCAD</span></div>
+<div class="skill"><span>QGIS</span></div>
+<div class="skill"><span>Surfer</span></div>
+<div class="skill"><span>Microsoft Office</span></div>`,
+  en: `<h3>Software skills</h3>
+<div class="skill"><span>AutoCAD</span></div>
+<div class="skill"><span>QGIS</span></div>
+<div class="skill"><span>Surfer</span></div>
+<div class="skill"><span>Microsoft Office</span></div>`
 },
 
 languages: {
   hu: `<h3>Nyelvek</h3>
-<ul><li>Svéd — anyanyelv</li><li>Angol — folyékony</li><li>Német — társalgási szint</li></ul>`,
+<ul><li>Magyar — anyanyelv</li><li>Angol — középfok</li></ul>`,
   en: `<h3>Languages</h3>
-<ul><li>Swedish — native</li><li>English — fluent</li><li>German — conversational</li></ul>`
+<ul><li>Hungarian — native</li><li>Angol — intermediate</li></ul>`
 },
+
+personal: {
+  hu: `<h3>Jellemzők</h3>
+<div class="skill"><span>Analitikus és rendszerszintű szemlélet</span></div>
+<div class="skill"><span>Precíz és alapos munkavégzés</span></div>
+<div class="skill"><span>Jó problémamegoldó képesség</span></div>
+<div class="skill"><span>Önálló tanulási és fejlődési igény</span></div>
+<div class="skill"><span>Nyitottság új szakmai területek és módszerek elsajátítására</span></div>
+<div class="skill"><span>Lelkiismeretesség és kitartás</span></div>`,
+  en: `<h3>Personal strengths</h3>
+<div class="skill"><span>Analytical and systematic approach</span></div>
+<div class="skill"><span>Precise and thorough working style</span></div>
+<div class="skill"><span>Good problem-solving skills</span></div>
+<div class="skill"><span>Willingness to learn and develop independently</span></div>
+<div class="skill"><span>Openness to learning new professional fields and methods</span></div>
+<div class="skill"><span>Conscientiousness and perseverance</span></div>`
+},  
 
 /* ---------- Tab 1: CV – main column ---------- */
 profile: {
   hu: `<h2>Bemutatkozás</h2>
-<p class="lead">Környezetmérnök nyolc év tapasztalattal a víztisztítás, a körforgásos gazdaság tervezése és a hatásvizsgálat területén. Gyorsan jutok el a terepi adatoktól a működő prototípusig, és szeretem azokat a projekteket, ahol a mérnöki munka, a szakpolitika és a közösségek találkoznak.</p>`,
+<p class="lead">Geológus és környezetmérnök MSc végzettséggel rendelkezem, környezetmérnöki tanulmányaimat EHS specializációval végeztem. Szakmai érdeklődésem középpontjában a környezetszennyezés, a szennyezett területek vizsgálata, a felszín alatti vizek védelme, valamint a környezeti kockázatok feltárása áll.
+Diplomamunkámat az ELGOSCAR Környezettechnológiai Zrt. közreműködésével, a pétfürdői régi nitrogénművek területén található történelmileg szennyezett területének környezetföldtani és vízföldtani viszonyait vizsgáltam, potenciális szennyezőanyag útvonalak, hidraulikai kapcsolatok azonosítása érdekében. A kutatás során terepi vizsgálatokban is részt vettem.
+Jelenleg geotechnikai előkészítő mérnökként dolgozom, ahol műszaki dokumentációk összeállításával, terepi és laboratóriumi adatok feldolgozásával, valamint tervezési feladatok előkészítésével támogatom a mérnöki munkát. 
+Célom, hogy komplex környezetvédelmi projektekben alkalmazzam megszerzett tudásomat, és egy szakmailag elkötelezett, együttműködő csapat tagjaként járuljak hozzá közös céljaink megvalósításához.
+</p>`,
   en: `<h2>Profile</h2>
-<p class="lead">Environmental engineer with eight years of experience in water treatment, circular-economy design and impact assessment. I move quickly from field data to a working prototype, and I like projects where engineering, policy and communities meet.</p>`
+<p class="lead">I hold MSc degrees in both Geology and Environmental Engineering, with a specialization in Environmental, Health and Safety (EHS). 
+My professional interests focus on environmental contamination, contaminated site investigation, groundwater protection and environmental risk assessment. For my Environmental Engineering MSc thesis, carried out in cooperation with ELGOSCAR Környezettechnológiai Zrt., I investigated the environmental and hydrogeological conditions of a historically contaminated industrial site in Pétfürdő, with a particular focus on potential contaminant pathways and hydraulic connections. The work also involved field investigations. 
+I currently work as an Engineering Coordinator, supporting engineering activities through the preparation of technical documentation, the processing of field and laboratory data, and the preparation of geotechnical design tasks. 
+I am looking to apply my knowledge and experience in complex environmental projects and contribute to a professionally committed and collaborative team.
+</p>`
 },
 
 /* Experience: copy one <div class="job">…</div> to add a position */
