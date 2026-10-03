@@ -129,19 +129,19 @@ experience: {
   hu: `<h2>Szakmai tapasztalat</h2>
 <div class="timeline">
   <div class="job">
-    <div class="when">2026.feb. – Jelenleg</div>
+    <div class="when">2026. feb. – Jelenleg</div>
     <h3>Előkészítő mérnök, Geo-Terra Kft.</h3>
     <p>Műszaki dokumentációk összeállítása, labor- és terepi adatok feldolgozása, fúrásszelvények és műszaki rajzok szerkesztése AutoCAD használatával.</p>
    
   </div>
   <div class="job">
-    <div class="when">2022.aug. – 2026.feb.</div>
+    <div class="when">2022. aug. – 2026. feb.</div>
     <h3>Laboráns, Geo-Terra Kft.</h3>
     <p>Talajmechanikai laborvizsgálatok (szemeloszlás, plasztikus index, k-tényező)</p>
     
    </div>
   <div class="job">
-    <div class="when">2019.aug. – 2019.nov.</div>
+    <div class="when">2019. aug. – 2019. nov.</div>
     <h3>Szakmai gyakorlat, V-Geotechnika Bt.</h3>
     <p>Terepi talaj és vízmintavétel, laboratóriumi talajmechanikai vizsgálatok</p> 
   </div>
@@ -149,19 +149,19 @@ experience: {
   en: `<h2>Experience</h2>
 <div class="timeline">
   <div class="job">
-    <div class="when">2026.feb. – Present</div>
+    <div class="when">2026. feb. – Present</div>
     <h3>Engineering coordinator, Geo-Terra Kft.</h3>
     <p>Preparation of technical documentation, processing of laboratory and field data, editing of borehole logs and technical drawings using AutoCAD. </p>
 
  </div>
   <div class="job">
-    <div class="when">2022.aug. – 2026.feb.</div>
+    <div class="when">2022. aug. – 2026. feb.</div>
     <h3>Laboratory technicant, Geo-Terra Kft.</h3>
     <p>Soil laboratory testing (grain size distribution, plasticity index, k-factor etc.)</p>
     
    </div>
   <div class="job">
-    <div class="when">2019.aug. – 2019.nov.</div>
+    <div class="when">2019. aug. – 2019. nov.</div>
     <h3>Professional internship, V-Geotechnika Bt.</h3>
     <p>Field soil and water sampling, laboratory soil mechanics testing.</p> 
   </div>
@@ -171,17 +171,17 @@ experience: {
 education: {
   hu: `<h2>Tanulmányok</h2>
 <div class="edu">
-  <div><h3>Környezetmérnök Msc</h3><span class="muted">Óbudai Egyetem 2026.febr.</span></div>
-  <div><h3>Geológia Msc</h3><span class="muted">ELTE, 2022.jún.</span></div>
-  <div><h3>Földtudományi Bsc</h3><span class="muted">Debreceni Egyetem, 2020.jún.</span></div>
+  <div><h3>Környezetmérnök Msc</h3><span class="muted">Óbudai Egyetem 2026. febr.</span></div>
+  <div><h3>Geológia Msc</h3><span class="muted">ELTE, 2022. jún.</span></div>
+  <div><h3>Földtudományi Bsc</h3><span class="muted">Debreceni Egyetem, 2020. jún.</span></div>
 </div>`,
 
    
   en: `<h2>Education</h2>
 <div class="edu">
-   <div><h3>Environmental engineering Msc</h3><span class="muted">Óbudai Egyetem 2026.febr.</span></div>
-  <div><h3>Geology Msc</h3><span class="muted">ELTE, 2022.jun.</span></div>
-  <div><h3>Earth Science Bsc</h3><span class="muted">Debreceni Egyetem, 2020.jun.</span></div>
+   <div><h3>Environmental engineering Msc</h3><span class="muted">Óbudai Egyetem 2026. febr.</span></div>
+  <div><h3>Geology Msc</h3><span class="muted">ELTE, 2022. jun.</span></div>
+  <div><h3>Earth Science Bsc</h3><span class="muted">Debreceni Egyetem, 2020. jun.</span></div>
 </div>`
 },
 
@@ -230,9 +230,9 @@ stats: {
 
 certifications: {
   hu: `<h2>Tanúsítványok</h2>
-<ul><li>Autodesk AutoCAD - Beginner to Avanced level (2026. márc.)</li></ul>`,
+<ul><li>Autodesk AutoCAD - Beginner to Avanced level - Udemy kurzus (2026. márc.)</li></ul>`,
   en: `<h2>Certifications</h2>
-<ul><li>Autodesk AutoCAD - Beginner to Avanced level (2026. march)</li></ul>`,
+<ul><li>Autodesk AutoCAD - Beginner to Avanced level - Udemy Course (2026. march)</li></ul>`,
 },
 
 publications: {
