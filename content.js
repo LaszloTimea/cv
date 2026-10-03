@@ -112,7 +112,7 @@ personal: {
 profile: {
   hu: `<h2>Bemutatkozás</h2>
 <p class="lead">Geológus és környezetmérnök MSc végzettséggel, EHS specializációval rendelkezem. 
-Fő szakmai érdeklődési területeim a szennyezett területek vizsgálata és a felszín alatti vizek védelme és a környezeti kockázatok feltárása felé irányul. 
+Fő szakmai érdeklődési területeim a szennyezett területek vizsgálata, a felszín alatti vizek védelme és a környezeti kockázatok feltárása felé irányul. 
 Ismereteimet környezetvédelmi projektekben, engedélyezési eljárásokban és a környezetvédelmi tanácsadás területén szeretném tovább kamatoztatni és bővíteni.</p>`,
   en: `<h2>Profile</h2>
 <p class="lead">I hold MSc degrees in Geology and Environmental Engineering, with a specialization in EHS. 
