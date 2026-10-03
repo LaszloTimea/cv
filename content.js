@@ -211,26 +211,9 @@ letter: {
 },
 
 /* ---------- Tab 3: Additional info (one block per card) ---------- */
-stats: {
-  hu: `<h2>Eredmények számokban</h2>
-<div class="stats">
-  <div><b>14</b><span class="muted">megvalósított projekt</span></div>
-  <div><b>28%</b><span class="muted">energiamegtakarítás a pilotban</span></div>
-  <div><b>3</b><span class="muted">kiszolgált önkormányzat</span></div>
-  <div><b>9</b><span class="muted">publikáció</span></div>
-</div>`,
-  en: `<h2>Impact in numbers</h2>
-<div class="stats">
-  <div><b>14</b><span class="muted">projects delivered</span></div>
-  <div><b>28%</b><span class="muted">energy saved in pilot</span></div>
-  <div><b>3</b><span class="muted">municipalities served</span></div>
-  <div><b>9</b><span class="muted">publications</span></div>
-</div>`
-},
-
 certifications: {
   hu: `<h2>Tanúsítványok</h2>
-<ul><li>Autodesk AutoCAD - Beginner to Avanced level - Udemy kurzus (2026. márc.)</li></ul>`,
+<ul><li>Autodesk AutoCAD - Beginner to Avanced level - Udemy kurzus (2026. március)</li></ul>`,
   en: `<h2>Certifications</h2>
 <ul><li>Autodesk AutoCAD - Beginner to Avanced level - Udemy Course (2026. march)</li></ul>`,
 },
