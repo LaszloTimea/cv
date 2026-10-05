@@ -14,7 +14,7 @@ pageTitle: {
   en: `Tímea László · Environmental Engineer`
 },
 pageDesc: {
-  hu: `László Tímea környezetmérnök önéletrajza, motivációs levele és további információi.`,
+  hu: `László Tímea környezetmérnök könéletrajza, motivációs levele és további információi.`,
   en: `CV, motivation letter and extra information of Tímea László, environmental engineer.`
 },
 photoAlt: {
