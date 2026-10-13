@@ -128,7 +128,7 @@ experience: {
   <div class="job">
     <div class="when">2026. feb. – Jelenleg</div>
     <h3>Előkészítő mérnök, Geo-Terra Kft.</h3>
-    <p>Műszaki dokumentációk összeállítása, labor- és terepi adatok feldolgozása, fúrásszelvények és műszaki rajzok szerkesztése AutoCAD használatával.</p>
+    <p>Műszaki dokumentációk összeállítása, labor- és terepi adatok feldolgozása, fúrásszelvények és műszaki rajzok szerkesztése AutoCAD használatával, CPT kiértékelés.</p>
    
   </div>
   <div class="job">
@@ -148,7 +148,7 @@ experience: {
   <div class="job">
     <div class="when">2026. feb. – Present</div>
     <h3>Engineering coordinator, Geo-Terra Kft.</h3>
-    <p>Preparation of technical documentation, processing of laboratory and field data, editing of borehole logs and technical drawings using AutoCAD. </p>
+    <p>Preparation of technical documentation, processing of laboratory and field data, editing of borehole logs and technical drawings using AutoCAD, CPT evaluation. </p>
 
  </div>
   <div class="job">
